@@ -1,0 +1,85 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+const token = 'NzE1NTEyODA4MDQ0NzU3MDgy.XtDqAw.gjcv73EwvxrRfLJycKIDIY4gedk';
+usedCommandRecently4 = new Set();
+
+client.on('ready', () =>{
+    console.log('gen bot is now online')
+    client.user.setPresence({ game: { name: `${client.guilds.size} Servers`, type: "WATCHING"}});
+});
+client.on('message', message =>{
+    if (message.content === '$info'){
+        message.channel.send('info has been DM')
+        message.author.send('This is a leaks server daily 2 leaks are released enjoy the server donations are accepted staff applications are open too this bot is created by emraldX bois  https://discord.gg/pm3sWc2');
+    };
+});
+client.on('message', message =>{
+    if (!message.guild) return;
+if (message.content === '$netflix'){
+        message.channel.send('Info has been sent enjoy;')
+    var string = `here is the netflix acc enjoy it ; pedro1967gfreitas@gmail.com:pedro1967  support our server bois https://discord.gg/pm3sWc2
+    here is the netflix acc enjoy it ; nicolavitale50@gmail.com:napoli10121988 support our server bois https://discord.gg/pm3sWc2
+    here is the netflix acc enjoy it ;  leo.delachaume@gmail.com:leo040705 support our server bois https://discord.gg/pm3sWc2
+    here is the netflix acc enjoy it ; g.anguiano.m@gmail.com:dragon2858  support our server bois https://discord.gg/pm3sWc2
+    here is the netflix acc enjoy it ; ay.almuhaeri82@gmail.com:Dd123456d  support our server bois https://discord.gg/pm3sWc2`
+    var words = string.split('\n');
+    let random = words[Math.floor(Math.random()*words.length)];
+    message.author.send(`${random}`);
+    console.log('a netflix acc was gened')
+
+};
+});
+client.on('message', message =>{
+    if (!message.guild) return;
+if (message.content === '$minecraft'){
+        message.channel.send('Info has been sent enjoy;')
+    var string = `here is the MC acc enjoy it ; andremarrogi@gmail.com:Andre_23  support our server bois https://discord.gg/pm3sWc2
+    here is the MC acc enjoy it ; andrew.96@o2.pl:wkswielun12 support our server bois https://discord.gg/pm3sWc2
+    here is the MC acc enjoy it ;  andrew@andrewtillman.com:Ewpdwag2 support our server bois https://discord.gg/pm3sWc2
+    here is the MC acc enjoy it ; andrewlu39@gmail.com:dakota722  support our server bois https://discord.gg/pm3sWc2
+    here is the MC acc enjoy it ; andrezerbini@gmail.com:andrez0102  support our server bois https://discord.gg/pm3sWc2`
+    var words = string.split('\n');
+    let random = words[Math.floor(Math.random()*words.length)];
+    message.author.send(`${random}`);
+    console.log('a MC acc was gened')
+};
+});
+client.on('message', message =>{
+    if (!message.guild) return;
+if (message.content === '$stock'){
+        message.channel.send('MC:900+ disney+:1000+ netflix:200+ nitro:10+')
+        console.log('stock was shown')
+    };
+});
+client.on('message', message =>{
+    if (!message.guild) return;
+if (message.content === '$nitro'){
+        message.channel.send('Info has been sent enjoy;')
+    var string = `here is the nitro code enjoy it ; discord.gift/fgfsd65GTAR  support our server bois https://discord.gg/pm3sWc2
+    here is the nitro code enjoy it ; discord.gift/sh65tGHSer support our server bois https://discord.gg/pm3sWc2
+    here is the nitro code enjoy it ;  discord.gift/7647GRHUq support our server bois https://discord.gg/pm3sWc2
+    here is the nitro code enjoy it ; discord.gift/67yyhjjiTY8  support our server bois https://discord.gg/pm3sWc2
+    here is the nitro code enjoy it ; discord.gift/H5T6Erfswr  support our server bois https://discord.gg/pm3sWc2`
+    var words = string.split('\n');
+    let random = words[Math.floor(Math.random()*words.length)];
+    message.author.send(`${random}`);
+    console.log('a fake nitro was gened')
+};
+});
+client.on('message', message =>{
+    if (!message.guild) return;
+if (message.content === '$disney+'){
+        message.channel.send('Info has been sent enjoy;')
+    var string = `here is the disney+ code enjoy it ; lukay67@gmail.com:ninja750  support our server bois https://discord.gg/pm3sWc2
+    here is the disney+ code enjoy it ; sanchezsophia30@gmail.com:chichay30 support our server bois https://discord.gg/pm3sWc2
+    here is the disney+ code enjoy it ;  shaishai696@gmail.com:lovemydog11 support our server bois https://discord.gg/pm3sWc2
+    here is the disney+ code enjoy it ; amybla0352@gmail.com:pys8p5cr  support our server bois https://discord.gg/pm3sWc2
+    here is the disney+ code enjoy it ; emilychristinecox@gmail.com:candie123  support our server bois https://discord.gg/pm3sWc2`
+    var words = string.split('\n');
+    let random = words[Math.floor(Math.random()*words.length)];
+    message.author.send(`${random}`);
+    console.log('a disney+ acc was gened')
+};
+});
+client.login(token);
